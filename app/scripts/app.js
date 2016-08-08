@@ -17,7 +17,7 @@ angular
     'ngSanitize',
     'ngTouch'
   ])
-  .config(function ($stateProvider, $urlRouterProvider) {
+  .config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
 
     $urlRouterProvider.otherwise('/');
 
@@ -32,4 +32,6 @@ angular
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl',
       });
+
+    $locationProvider.html5Mode(true).hashPrefix('!');
   });
