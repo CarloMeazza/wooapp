@@ -15,7 +15,8 @@ angular
     'ngCookies',
     'ngResource',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'ui.bootstrap'
   ])
   .config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
 
